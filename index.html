@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover and register for campus events with EventSphere." />
+  <title>EventSphere | Campus Event Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">Browse</p>
+      <a class="nav-link active" href="#events"><span>◉</span>Events<i></i></a>
+      <a class="nav-link" href="colleges.html"><span>▤</span>Find Colleges</a>
+      <p class="nav-label">Plan</p>
+      <a class="nav-link" href="calendar.html"><span>▦</span>Calendar</a>
+      <p class="nav-label">Tools</p>
+      <a class="nav-link" href="filters.html"><span>☷</span>Event Filters</a>
+      <a class="nav-link" href="event-details.html?event=diwali"><span>▤</span>Event Details</a>
+      <p class="nav-label">Registration</p>
+      <a class="nav-link" href="registration.html?event=diwali"><span>♧</span>Registration</a>
+      <a class="nav-link" href="registration.html?event=diwali"><span>☑</span>Confirmation</a>
+      <p class="nav-label">Personal</p>
+      <a class="nav-link" href="my-events.html"><span>▣</span>My Events<b class="count">1</b></a>
+      <a class="nav-link" href="event-pulse.html?event=basketball"><span>⌁</span>Event Pulse</a>
+      <a class="nav-link" href="profile.html"><span>♙</span>Profile</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="online-dot"></span> Campus is buzzing</div>
+  </aside>
+
+  <main id="home" class="main">
+    <header class="topbar">
+      <div><h1>Find your next campus moment</h1><p>Discover, register, and never miss what's happening on campus.</p></div>
+      <div class="top-actions"><label class="top-search"><span>⌕</span><input type="search" placeholder="Search events or colleges..." aria-label="Search events or colleges"></label><button class="icon-button" aria-label="Notifications">♧</button><a class="primary-button" href="my-events.html">▦ <span>My Events</span></a></div>
+    </header>
+
+    <div class="content">
+      <section class="hero">
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <div class="hero-content"><span class="eyebrow"><span>✧</span> 13 events happening this semester</span>
+          <h2>Find your next campus moment</h2>
+          <p>From hackathons to cultural nights, explore everything happening<br class="desktop-break"> around you. Register in seconds and never miss out.</p>
+          <div class="hero-actions"><a class="button-white" href="filters.html">Explore Events <span>→</span></a><a class="button-glass" href="calendar.html">▦ &nbsp; View Calendar</a></div>
+        </div>
+      </section>
+
+      <section class="search-panel" id="filters"><span>⌕</span><input id="homeEventSearch" type="search" placeholder="Search events by title, category, or location..." aria-label="Search events by title, category, or location"></section>
+      <p class="home-search-status" id="homeSearchStatus" aria-live="polite"></p>
+
+      <section class="section" id="categories"><h2 class="section-title">Browse by Category</h2>
+        <div class="category-grid">
+          <a class="category-card" href="#featured"><span class="category-icon culture">●</span><strong>Culture</strong><small>3 events</small></a>
+          <a class="category-card" href="#featured"><span class="category-icon tech">●</span><strong>Technical</strong><small>3 events</small></a>
+          <a class="category-card" href="#featured"><span class="category-icon sports">●</span><strong>Sports</strong><small>2 events</small></a>
+          <a class="category-card" href="#featured"><span class="category-icon career">●</span><strong>Professional</strong><small>3 events</small></a>
+          <a class="category-card" href="#featured"><span class="category-icon social">●</span><strong>Social</strong><small>2 events</small></a>
+        </div>
+      </section>
+
+      <section class="section" id="featured"><h2 class="section-title"><span>♨</span> Featured Events</h2>
+        <div class="featured-grid">
+          <article class="featured-card"><div class="poster poster-diwali"><span class="poster-tag">Culture</span><div><small>EVENTSPHERE</small><h3>Diwali Night:<br>Festival of Lights</h3></div></div><div class="featured-info"><div class="pills"><span class="pill orange">● &nbsp;Culture</span><span class="trending">⌁ TRENDING</span></div><h3>Diwali Night: Festival of Lights</h3><p>Experience the magic of Diwali with vibrant cultural performances, traditional food stalls, rangoli...</p><div class="event-meta"><span>▦ &nbsp;Tue, Oct 6</span><span>◷ &nbsp;6:00 PM</span><span>♧ &nbsp;Main Quadrangle</span></div><div class="card-bottom"><span>Free</span><span>♧ &nbsp;87 seats left</span><a href="event-details.html?event=diwali">View →</a></div></div></article>
+          <article class="featured-card"><div class="poster poster-hack"><span class="poster-tag">Technical</span><div><small>EVENTSPHERE</small><h3>AI &amp; Robotics<br>Hackathon 2026</h3></div></div><div class="featured-info"><div class="pills"><span class="pill blue">● &nbsp;Technical</span><span class="trending">⌁ TRENDING</span></div><h3>AI &amp; Robotics Hackathon 2026</h3><p>A 36-hour hackathon challenging teams to build AI-powered robotics solutions. Mentors from leading tech...</p><div class="event-meta"><span>▦ &nbsp;Thu, Oct 8</span><span>◷ &nbsp;9:00 AM</span><span>♧ &nbsp;Innovation Lab, Block C</span></div><div class="card-bottom"><span>$15</span><span>♧ &nbsp;23 seats left</span><a href="event-details.html?event=hackathon">View →</a></div></div></article>
+          <article class="featured-card"><div class="poster poster-career"><span class="poster-tag">Professional</span><div><small>EVENTSPHERE</small><h3>Career Fair:<br>Tech &amp; Finance Expo</h3></div></div><div class="featured-info"><div class="pills"><span class="pill cyan">● &nbsp;Professional</span></div><h3>Career Fair: Tech &amp; Finance Expo</h3><p>Connect with 40+ top employers across technology and finance. Bring printed resumes, attend on-the-spot...</p><div class="event-meta"><span>▦ &nbsp;Sun, Oct 11</span><span>◷ &nbsp;10:00 AM</span><span>♧ &nbsp;Grand Hall, Student Center</span></div><div class="card-bottom"><span>Free</span><span>♧ &nbsp;142 seats left</span><a href="event-details.html?event=career-fair">View →</a></div></div></article>
+          <article class="featured-card"><div class="poster poster-garba"><span class="poster-tag">Culture</span><div><small>EVENTSPHERE</small><h3>Navratri Garba<br>Night</h3></div></div><div class="featured-info"><div class="pills"><span class="pill orange">● &nbsp;Culture</span><span class="trending">⌁ TRENDING</span></div><h3>Navratri Garba Night</h3><p>Celebrate the start of Navratri with a spectacular Garba Night! Dance to live dhol beats, traditional Garba and...</p><div class="event-meta"><span>▦ &nbsp;Sun, Oct 11</span><span>◷ &nbsp;7:00 PM</span><span>♧ &nbsp;Main Quadrangle</span></div><div class="card-bottom"><span>Free</span><span>♧ &nbsp;432 seats left</span><a href="event-details.html?event=garba">View →</a></div></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="today"><h2 class="section-title"><span>▦</span> Happening Today <span class="number-badge">3</span></h2>
+        <div class="today-grid">
+          <article class="today-card"><div class="today-image poster-diwali"><span class="poster-tag">Culture</span><div><small>EVENTSPHERE</small><h3>Diwali Night: Festival of Lights</h3></div></div><div class="today-info"><h3>Diwali Night: Festival of Lights</h3><p>▦ &nbsp;Tue, Oct 6 · 6:00 PM</p><p>♧ &nbsp;Main Quadrangle</p><hr><div><b>Free</b><span class="capacity red"><i></i></span>87 left</div></div></article>
+          <article class="today-card"><div class="today-image poster-openmic"><span class="poster-tag">Culture</span><div><small>EVENTSPHERE</small><h3>Poetry Slam &amp; Open Mic Night</h3></div></div><div class="today-info"><h3>Poetry Slam &amp; Open Mic Night</h3><p>▦ &nbsp;Tue, Oct 6 · 7:30 PM</p><p>♧ &nbsp;The Loft, Arts Building</p><hr><div><b>Free</b><span class="capacity amber"><i></i></span>34 left</div></div></article>
+          <article class="today-card sold"><div class="today-image poster-web"><span class="poster-tag">Technical</span><div><small>EVENTSPHERE</small><h3>Web3 &amp; Blockchain Workshop</h3></div><span class="sold-label">SOLD OUT</span></div><div class="today-info"><h3>Web3 &amp; Blockchain Workshop</h3><p>▦ &nbsp;Tue, Oct 6 · 1:00 PM</p><p>♧ &nbsp;Lab 204, CS Building</p><hr><div><b>Free</b><span class="capacity"><i></i></span>0 left</div></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="trending"><h2 class="section-title"><span>♨</span> Trending Now</h2><div class="trending-grid">
+        <a class="trend-card" href="event-details.html?event=diwali"><span class="mini-poster poster-diwali">Culture</span><span><strong>Diwali Night: Festival of Lights</strong><small>Tue, Oct 6 · 6:00 PM</small><small><i class="dot orange-dot"></i> Main Quadrangle</small></span><b>→</b></a>
+        <a class="trend-card" href="event-details.html?event=hackathon"><span class="mini-poster poster-hack">Technical</span><span><strong>AI &amp; Robotics Hackathon 2026</strong><small>Thu, Oct 8 · 9:00 AM</small><small><i class="dot blue-dot"></i> Innovation Lab, Block C</small></span><b>→</b></a>
+        <a class="trend-card" href="event-details.html?event=basketball"><span class="mini-poster poster-sport">Sports</span><span><strong>Inter-University Basketball Finals</strong><small>Wed, Oct 7 · 4:00 PM</small><small><i class="dot green-dot"></i> Sports Arena</small></span><b>→</b></a>
+        <a class="trend-card" href="event-details.html?event=startup"><span class="mini-poster poster-hack">Technical</span><span><strong>Startup Pitch Competition</strong><small>Sat, Oct 10 · 2:00 PM</small><small><i class="dot blue-dot"></i> Auditorium A, Business Block</small></span><b>→</b></a>
+        <a class="trend-card" href="event-details.html?event=garba"><span class="mini-poster poster-garba">Culture</span><span><strong>Navratri Garba Night</strong><small>Sun, Oct 11 · 7:00 PM</small><small><i class="dot orange-dot"></i> Main Quadrangle</small></span><b>→</b></a>
+      </div></section>
+    </div>
+    <footer class="footer"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a><p>Find your next campus moment. Discover, register, and never miss what's happening on campus — all in one place.</p><div class="socials"><a href="#">𝕏</a><a href="#">◎</a><a href="#">in</a><a href="#">⌘</a></div></div><div><h3>Explore</h3><a href="#events">Discover</a><a href="calendar.html">Calendar</a><a href="filters.html">Filters</a><a href="my-events.html">My Events</a><a href="event-pulse.html?event=basketball">Event Pulse</a></div><div><h3>Get in Touch</h3><a href="mailto:hello@eventsphere.app">✉ &nbsp;hello@eventsphere.app</a><p>Student Center, Room 101</p><p>Mon–Fri, 9 AM – 5 PM</p></div></footer>
+  </main>
+  <script src="global-search.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
