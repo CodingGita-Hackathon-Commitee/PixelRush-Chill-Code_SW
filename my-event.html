@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your registered campus events and check-in passes." />
+  <title>My Events | EventSphere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="event-details.css" />
+  <link rel="stylesheet" href="my-events.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">Browse</p>
+      <a class="nav-link" href="index.html"><span>◉</span>Events</a>
+      <a class="nav-link" href="colleges.html"><span>▤</span>Find Colleges</a>
+      <p class="nav-label">Plan</p>
+      <a class="nav-link" href="calendar.html"><span>▦</span>Calendar</a>
+      <p class="nav-label">Tools</p>
+      <a class="nav-link" href="filters.html"><span>☷</span>Event Filters</a>
+      <a class="nav-link" href="event-details.html?event=diwali"><span>▤</span>Event Details</a>
+      <p class="nav-label">Registration</p>
+      <a class="nav-link" href="registration.html?event=diwali"><span>♧</span>Registration</a>
+      <a class="nav-link" href="registration.html?event=diwali"><span>☑</span>Confirmation</a>
+      <p class="nav-label">Personal</p>
+      <a class="nav-link active" href="my-events.html"><span>▣</span>My Events<b class="count" id="sidebarUpcomingCount">1</b><i></i></a>
+      <a class="nav-link" href="event-pulse.html?event=basketball"><span>⌁</span>Event Pulse</a>
+      <a class="nav-link" href="profile.html"><span>♙</span>Profile</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="online-dot"></span>Campus is buzzing</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Find your next campus moment</h1><p>Discover, register, and never miss what's happening on campus.</p></div>
+      <div class="top-actions"><label class="top-search"><span>⌕</span><input type="search" placeholder="Search events or colleges..." aria-label="Search events or colleges"></label><button class="icon-button" aria-label="Notifications">♧</button><a class="primary-button" href="my-events.html">▦ <span>My Events</span></a></div>
+    </header>
+
+    <div class="content my-events-content">
+      <div class="my-events-heading"><h2>My Events</h2><p>Your registrations, check-in passes, and event history.</p></div>
+      <section class="my-events-section">
+        <h3 class="my-events-section-title"><span>▦</span>Upcoming <b id="upcomingCount">0</b></h3>
+        <div class="upcoming-events" id="upcomingEvents"></div>
+      </section>
+      <section class="my-events-section past-section">
+        <h3 class="my-events-section-title"><span>◴</span>Past Events <b class="muted-count" id="pastCount">0</b></h3>
+        <div class="past-events" id="pastEvents"></div>
+      </section>
+    </div>
+    <footer class="footer"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a><p>Find your next campus moment. Discover, register, and never miss what's happening on campus — all in one place.</p><div class="socials"><a href="#">𝕏</a><a href="#">◎</a><a href="#">in</a><a href="#">⌘</a></div></div><div><h3>Explore</h3><a href="index.html">Discover</a><a href="calendar.html">Calendar</a><a href="filters.html">Filters</a><a href="my-events.html">My Events</a><a href="event-pulse.html?event=basketball">Event Pulse</a></div><div><h3>Get in Touch</h3><a href="mailto:hello@eventsphere.app">✉ &nbsp;hello@eventsphere.app</a><p>Student Center, Room 101</p><p>Mon–Fri, 9 AM – 5 PM</p></div></footer>
+  </main>
+  <script src="my-events.js"></script>
+  <script src="global-search.js"></script>
+</body>
+</html>
