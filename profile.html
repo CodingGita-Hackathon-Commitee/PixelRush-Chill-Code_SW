@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manage your EventSphere profile, interests, and campus activity." />
+  <title>Profile | EventSphere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">Browse</p>
+      <a class="nav-link" href="index.html"><span>◉</span>Events</a>
+      <a class="nav-link" href="colleges.html"><span>▤</span>Find Colleges</a>
+      <p class="nav-label">Plan</p>
+      <a class="nav-link" href="calendar.html"><span>▦</span>Calendar</a>
+      <p class="nav-label">Tools</p>
+      <a class="nav-link" href="filters.html"><span>☷</span>Event Filters</a>
+      <a class="nav-link" href="event-details.html?event=diwali"><span>▤</span>Event Details</a>
+      <p class="nav-label">Registration</p>
+      <a class="nav-link" href="registration.html?event=diwali"><span>♧</span>Registration</a>
+      <a class="nav-link" href="registration.html?event=diwali"><span>☑</span>Confirmation</a>
+      <p class="nav-label">Personal</p>
+      <a class="nav-link" href="my-events.html"><span>▣</span>My Events<b class="count" id="profileSidebarCount">1</b></a>
+      <a class="nav-link" href="event-pulse.html?event=basketball"><span>⌁</span>Event Pulse</a>
+      <a class="nav-link active" href="profile.html" aria-current="page"><span>♙</span>Profile<i></i></a>
+    </nav>
+    <div class="sidebar-bottom"><span class="online-dot"></span> Campus is buzzing</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Find your next campus moment</h1><p>Discover, register, and never miss what's happening on campus.</p></div>
+      <div class="top-actions"><label class="top-search"><span>⌕</span><input type="search" placeholder="Search events or colleges..." aria-label="Search events or colleges"></label><button class="icon-button" aria-label="Notifications">♧</button><a class="primary-button" href="my-events.html">▦ <span>My Events</span></a></div>
+    </header>
+
+    <div class="content profile-content">
+      <section class="profile-heading"><h2>Profile</h2><p>Your account, preferences, and event activity.</p></section>
+
+      <section class="profile-hero">
+        <div class="profile-cover"></div>
+        <div class="profile-identity">
+          <div class="profile-avatar" id="profileAvatar" aria-hidden="true">JL</div>
+          <div class="profile-identity-copy"><h3 data-profile="name">Jordan Lee</h3><p><span data-profile="major">Computer Science</span> · <span data-profile="year">Senior</span></p><small>Student ID: <span data-profile="studentId">STU2021001</span></small></div>
+          <button class="profile-edit-button" type="button" id="editProfile"><span>✎</span> Edit Profile</button>
+        </div>
+        <p class="profile-bio" data-profile="bio">CS senior who loves hackathons, basketball, and cultural festivals. Always looking for the next big campus event.</p>
+      </section>
+
+      <section class="profile-stat-grid" aria-label="Event statistics">
+        <a class="profile-stat" href="my-events.html"><span class="stat-icon blue-icon">♧</span><strong id="registeredStat">1</strong><small>Registered</small></a>
+        <a class="profile-stat" href="my-events.html"><span class="stat-icon pale-icon">▦</span><strong id="upcomingStat">1</strong><small>Upcoming</small></a>
+        <a class="profile-stat" href="my-events.html"><span class="stat-icon pale-icon">✓</span><strong id="attendedStat">0</strong><small>Attended</small></a>
+        <a class="profile-stat" href="event-pulse.html"><span class="stat-icon pale-icon">⌁</span><strong id="pulseStat">0</strong><small>Pulse Votes</small></a>
+      </section>
+
+      <div class="profile-columns">
+        <section class="profile-card personal-card">
+          <h3>Personal Information</h3>
+          <dl class="personal-list">
+            <div><span class="personal-icon">♙</span><dt>Full Name</dt><dd data-profile="name">Jordan Lee</dd></div>
+            <div><span class="personal-icon">✉</span><dt>Email</dt><dd data-profile="email">jordan.lee@campus.edu</dd></div>
+            <div><span class="personal-icon">♧</span><dt>Phone</dt><dd data-profile="phone">555-0123</dd></div>
+            <div><span class="personal-icon">♧</span><dt>Major</dt><dd data-profile="major">Computer Science</dd></div>
+            <div><span class="personal-icon">♙</span><dt>Year</dt><dd data-profile="year">Senior</dd></div>
+          </dl>
+        </section>
+
+        <section class="profile-card activity-card">
+          <h3><span class="section-mark">⌁</span> Activity Overview</h3>
+          <div class="activity-metrics">
+            <a href="my-events.html"><span>♧ &nbsp;Events Registered</span><strong id="registeredActivity">1</strong></a>
+            <a href="my-events.html"><span>✓ &nbsp;Events Attended</span><strong id="attendedActivity">0</strong></a>
+            <a href="event-pulse.html"><span>⌁ &nbsp;Pulse Responses</span><strong id="pulseActivity">0</strong></a>
+            <a href="event-pulse.html"><span>☆ &nbsp;Feedback Submitted</span><strong id="feedbackActivity">0</strong></a>
+          </div>
+        </section>
+
+        <section class="profile-card about-card">
+          <h3>About Me</h3>
+          <p data-profile="bio">CS senior who loves hackathons, basketball, and cultural festivals. Always looking for the next big campus event.</p>
+        </section>
+
+        <section class="profile-card notification-card">
+          <h3><span class="section-mark muted-mark">♧</span> Notifications</h3>
+          <div class="preference-list">
+            <label class="preference-row"><span><strong>Event Reminders</strong><small>Get notified before your registered events start</small></span><input type="checkbox" data-preference="reminders" aria-label="Event reminders"></label>
+            <label class="preference-row"><span><strong>New Events</strong><small>Be the first to know when new events are posted</small></span><input type="checkbox" data-preference="newEvents" aria-label="New event notifications"></label>
+            <label class="preference-row"><span><strong>Weekly Digest</strong><small>A summary of campus events every Monday</small></span><input type="checkbox" data-preference="weeklyDigest" aria-label="Weekly event digest"></label>
+          </div>
+        </section>
+
+        <section class="profile-card interest-card">
+          <h3>Event Interests</h3><p>Categories you follow.</p>
+          <div class="interest-tags" id="interestTags">
+            <button class="interest-tag culture-tag" type="button" data-interest="Culture"><i></i>Culture</button>
+            <button class="interest-tag technical-tag" type="button" data-interest="Technical"><i></i>Technical</button>
+            <button class="interest-tag sports-tag" type="button" data-interest="Sports"><i></i>Sports</button>
+            <button class="interest-tag professional-tag" type="button" data-interest="Professional"><i></i>Professional</button>
+            <button class="interest-tag social-tag" type="button" data-interest="Social"><i></i>Social</button>
+          </div>
+        </section>
+
+        <section class="profile-card recent-card">
+          <h3><span class="section-mark muted-mark">◷</span> Recent Activity</h3>
+          <div id="recentActivity" class="recent-activity"></div>
+        </section>
+
+        <section class="profile-card account-card">
+          <h3><span class="section-mark muted-mark">♢</span> Account</h3>
+          <div class="account-actions">
+            <button type="button" data-account-action="privacy"><span><strong>Privacy Settings</strong><small>Manage who can see your profile</small></span><b>›</b></button>
+            <button type="button" data-account-action="linked"><span><strong>Linked Accounts</strong><small>Connect social media profiles</small></span><b>›</b></button>
+            <button type="button" data-account-action="download"><span><strong>Download My Data</strong><small>Export your event history</small></span><b>›</b></button>
+            <button type="button" data-account-action="delete"><span><strong>Delete Account</strong><small>Permanently remove your account</small></span><b>›</b></button>
+          </div>
+        </section>
+      </div>
+      <p class="profile-toast" id="profileToast" role="status" aria-live="polite"></p>
+    </div>
+
+    <footer class="footer"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a><p>Find your next campus moment. Discover, register, and never miss what's happening on campus — all in one place.</p></div><div><h3>Explore</h3><a href="index.html">Discover</a><a href="calendar.html">Calendar</a><a href="filters.html">Filters</a><a href="my-events.html">My Events</a><a href="event-pulse.html">Event Pulse</a></div><div><h3>Get in Touch</h3><a href="mailto:hello@eventsphere.app">✉ &nbsp;hello@eventsphere.app</a><p>Student Center, Room 101</p><p>Mon–Fri, 9 AM – 5 PM</p></div></footer>
+  </main>
+
+  <dialog class="profile-dialog" id="profileDialog" aria-labelledby="profileDialogTitle">
+    <form id="profileForm" method="dialog">
+      <div class="dialog-heading"><div><h2 id="profileDialogTitle">Edit Profile</h2><p>Update your campus profile information.</p></div><button type="button" class="dialog-close" id="closeProfileDialog" aria-label="Close">×</button></div>
+      <label>Full Name<input name="name" required maxlength="80"></label>
+      <label>Email Address<input name="email" type="email" required></label>
+      <label>Phone<input name="phone" type="tel"></label>
+      <label>Student ID<input name="studentId" maxlength="30"></label>
+      <div class="dialog-form-grid"><label>Major<input name="major" required></label><label>Year<select name="year"><option>Freshman</option><option>Sophomore</option><option>Junior</option><option>Senior</option><option>Graduate</option></select></label></div>
+      <label>About Me<textarea name="bio" rows="3" maxlength="240"></textarea></label>
+      <div class="dialog-actions"><button class="profile-cancel" type="button" id="cancelProfileEdit">Cancel</button><button class="profile-save" type="submit">Save Changes</button></div>
+    </form>
+  </dialog>
+  <dialog class="profile-dialog account-dialog" id="accountDialog" aria-labelledby="accountDialogTitle">
+    <div class="dialog-heading"><div><h2 id="accountDialogTitle">Account settings</h2><p id="accountDialogMessage"></p></div><button type="button" class="dialog-close" id="closeAccountDialog" aria-label="Close">×</button></div>
+    <div class="dialog-actions"><button class="profile-save" type="button" id="confirmAccountDialog">Done</button></div>
+  </dialog>
+  <script src="global-search.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>
