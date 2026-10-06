@@ -1,0 +1,65 @@
+.filters-content{padding-top:42px;padding-bottom:42px}
+.filters-heading{margin-bottom:30px}
+.filters-heading h2{font-size:30px;letter-spacing:-.7px;margin:0 0 7px;display:flex;align-items:center;gap:12px}
+.filters-heading h2 span{color:#2774fa;font-size:28px}
+.filters-heading p{font-size:16px;color:#65728d;margin:0}
+.filters-layout{display:grid;grid-template-columns:minmax(360px,424px) minmax(0,1fr);gap:30px;align-items:start}
+.filter-panel{position:static;background:#fff;color:#596883;border-radius:19px;padding:24px 25px}
+.filter-group{margin:0 0 26px}
+.filter-group h3{font-size:17px;color:#c6cfdf;margin:0 0 15px;font-weight:700;display:flex;align-items:center;gap:8px}
+.category-option{height:53px;border:1px solid #30364a;border-radius:11px;display:flex;align-items:center;gap:13px;padding:0 12px;margin:0 0 9px;color:#9aa7bd;font-size:16px;cursor:pointer}
+.category-option input,.seats-option input{width:25px;height:25px;margin:0;accent-color:#2168f5;flex:none}
+.category-option span{min-width:0}
+.category-option small{margin-left:auto;color:#35415b;font-size:14px}
+.category-swatch{width:12px;height:12px;border-radius:50%;flex:none}
+.culture-swatch{background:#f59e0b}.technical-swatch{background:#3b82f6}.sports-swatch{background:#10b981}.professional-swatch{background:#06b6d4}.social-swatch{background:#f43f5e}
+.choice-grid{display:grid;gap:10px}
+.date-choices{grid-template-columns:repeat(2,minmax(0,1fr))}
+.three-choices{grid-template-columns:repeat(3,minmax(0,1fr))}
+.filter-choice{height:48px;background:#fff;border:1px solid #30364a;border-radius:11px;color:#596883;font:500 16px Inter,Arial,sans-serif;cursor:pointer;white-space:nowrap}
+.filter-choice:hover{background:#f5f8ff}.filter-choice.active{border-color:#2b78ff;background:#eef5ff;color:#155ff0}
+.filter-group h3>span{font-size:20px}.filter-group h3 b{margin-left:auto;color:#1764f5;font-size:14px}
+.distance-group{margin-bottom:25px}.distance-group input{width:100%;height:8px;accent-color:#246df5;cursor:pointer}
+.range-labels{display:flex;justify-content:space-between;margin-top:7px;color:#23314a;font-size:12px}
+.seats-option{min-height:82px;border:1px solid #30364a;border-radius:11px;padding:13px 14px;display:flex;align-items:center;gap:12px;color:#9aa7bd;font-size:15px;line-height:1.4;cursor:pointer}
+.filter-actions{border-top:1px solid #30364a;padding-top:20px;margin-top:24px;display:flex;gap:10px}
+.filter-actions button{height:52px;border-radius:11px;font:700 15px Inter,Arial,sans-serif;cursor:pointer}
+.apply-filters{flex:1;border:0;background:#2168f5;color:#fff;box-shadow:0 3px 7px #1b5ad633}
+.clear-filters{padding:0 17px;border:1px solid #30364a;background:#fff;color:#8b98b0}
+.filter-results h2{display:flex;align-items:center;gap:14px;font-size:22px;margin:4px 0 21px}
+.filter-results h2 span{background:#edf5ff;border-radius:20px;color:#2168f5;padding:6px 14px;font-size:16px}
+.filter-event-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.filter-event-card{display:block;min-width:0;background:#fff;border-radius:19px;overflow:hidden;color:#53627e;text-decoration:none;transition:transform .16s ease,box-shadow .16s ease}
+.filter-event-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #11182730}
+.filter-event-card:focus-visible{outline:3px solid #73a9ff;outline-offset:3px}
+.filter-event-art{height:200px;position:relative;padding:17px 20px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;color:#fff;background-size:cover;background-position:center}
+.filter-event-art:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#172033a8,transparent 76%)}
+.filter-event-art>*{position:relative;z-index:1}
+.filter-event-category,.filter-event-trending{align-self:flex-start;border-radius:20px;padding:6px 12px;background:#ffffff55;text-transform:uppercase;font-size:12px;font-weight:800}
+.filter-event-trending{position:absolute;top:15px;right:14px;background:#ffffffdf;color:#e7eaf0;font-size:10px}
+.filter-event-art small{font-size:11px;letter-spacing:.8px}.filter-event-art h3{font-size:21px;line-height:1.25;margin:4px 0 0;letter-spacing:-.35px}
+.filter-event-info{padding:20px}
+.filter-event-info h3{font-size:18px;line-height:1.35;color:#26314c;margin:0 0 11px;min-height:48px}
+.filter-event-info p{font-size:14px;margin:7px 0;line-height:1.35}
+.filter-event-info hr{border:0;border-top:1px solid #30364a;margin:16px 0}
+.filter-card-bottom{display:flex;align-items:center;gap:8px}
+.filter-card-bottom strong{color:#c7d0df;font-size:16px;margin-right:auto}.filter-card-bottom small{color:#34415a;font-size:13px;white-space:nowrap}
+.filter-seat-track{width:80px;height:7px;border-radius:7px;background:#262c3c;overflow:hidden}.filter-seat-track i{display:block;width:22%;height:100%;border-radius:7px;background:#f0445b}
+.filter-seat-track i.green{background:#10b981}.filter-seat-track i.blue{background:#3b82f6}.filter-seat-track i.cyan{background:#06b6d4}.filter-seat-track i.pink{background:#f43f5e}.filter-seat-track i.orange{background:#f59e0b}
+.filter-event-art.poster-diwali,.filter-event-art.poster-garba{background-image:radial-gradient(ellipse at 36% 38%,#ffc250 0,transparent 20%),radial-gradient(ellipse at 68% 64%,#ed6316 0,transparent 27%),linear-gradient(135deg,#e79511,#8a350a)}
+.filter-event-art.poster-hack{background-image:radial-gradient(circle at 68% 31%,#6ec8ff 0,transparent 19%),linear-gradient(135deg,#307de1,#153780)}
+.filter-event-art.poster-career{background-image:linear-gradient(135deg,#35bfd0,#135b73)}
+.filter-event-art.poster-openmic{background-image:radial-gradient(ellipse at 32% 34%,#ffa328 0,transparent 25%),linear-gradient(135deg,#ab5515,#652b10)}
+.filter-event-art.poster-web{background-image:linear-gradient(135deg,#b7cae9,#536789)}
+.filter-event-art.art-yoga,.filter-event-art.art-cinema{background-image:linear-gradient(135deg,#f06e83,#8a3851)}
+.filter-event-art.art-basketball,.filter-event-art.art-run{background-image:radial-gradient(circle at 65% 38%,#f6a44b 0 13%,transparent 14%),linear-gradient(135deg,#13a575,#075849)}
+.filter-event-art.art-career,.filter-event-art.art-resume{background-image:linear-gradient(135deg,#16b0bf,#13596d)}
+.filter-event-art.art-startup{background-image:radial-gradient(circle at 68% 34%,#62acff 0 10%,transparent 11%),linear-gradient(135deg,#3d89ef,#344b9c)}
+.filter-event-art.art-network{background-image:linear-gradient(135deg,#18b8a4,#21667e)}
+.no-filter-results{grid-column:1/-1;text-align:center;padding:80px 20px;color:#8997b1}
+.no-filter-results>span{font-size:38px}.no-filter-results h3{color:#e3e9f3;margin:12px 0 6px}.no-filter-results p{margin:0;font-size:14px}
+@media(max-width:1400px){.filters-layout{grid-template-columns:minmax(300px,340px) minmax(0,1fr);gap:22px}.filter-event-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filter-panel{padding:22px}}
+@media(max-width:900px){.filters-content{padding-top:30px}.filters-layout{grid-template-columns:1fr}.filter-panel{position:static;max-height:none}.filter-event-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.filters-content{padding:24px 14px 30px}.filters-heading{margin-bottom:20px}.filters-heading h2{font-size:25px}.filters-heading p{font-size:14px;line-height:1.5}.filter-panel{padding:19px}.filter-group{margin-bottom:21px}.category-option{font-size:14px;gap:10px}.filter-choice{height:44px;font-size:13px}.three-choices .filter-choice{font-size:12px}.seats-option{font-size:13px}.filter-actions button{height:48px;font-size:13px}.filter-results h2{font-size:20px;margin:2px 0 15px}.filter-results h2 span{font-size:14px}.filter-event-grid{grid-template-columns:1fr;gap:15px}.filter-event-art{height:205px}.filter-event-info{padding:17px}.filter-event-info h3{min-height:0;font-size:17px}}
+
+.event-results-search{height:48px;display:flex;align-items:center;gap:10px;margin:0 0 18px;padding:0 14px;border:1px solid #dbe2ed;border-radius:11px;background:#fff;color:#77839a}.event-results-search>span{font-size:24px}.event-results-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#303c55;font:inherit}.event-results-search input::placeholder{color:#8793a8}
