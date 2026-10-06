@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find colleges and explore their campus events." />
+  <title>Find Colleges | EventSphere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">Browse</p>
+      <a class="nav-link" href="index.html"><span>◉</span>Events</a>
+      <a class="nav-link active" href="colleges.html"><span>▤</span>Find Colleges<i></i></a>
+      <p class="nav-label">Plan</p>
+      <a class="nav-link" href="calendar.html"><span>▦</span>Calendar</a>
+      <p class="nav-label">Tools</p>
+      <a class="nav-link" href="filters.html"><span>☷</span>Event Filters</a>
+      <a class="nav-link" href="event-details.html?event=diwali"><span>▤</span>Event Details</a>
+      <p class="nav-label">Registration</p>
+      <a class="nav-link" href="registration.html?event=diwali"><span>♧</span>Registration</a>
+      <a class="nav-link" href="registration.html?event=diwali"><span>☑</span>Confirmation</a>
+      <p class="nav-label">Personal</p>
+      <a class="nav-link" href="my-events.html"><span>▣</span>My Events<b class="count">1</b></a>
+      <a class="nav-link" href="event-pulse.html?event=basketball"><span>⌁</span>Event Pulse</a>
+      <a class="nav-link" href="profile.html"><span>♙</span>Profile</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="online-dot"></span> Campus is buzzing</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Find your next campus moment</h1><p>Discover, register, and never miss what's happening on campus.</p></div>
+      <div class="top-actions"><label class="top-search"><span>⌕</span><input type="search" placeholder="Search events or colleges..." aria-label="Search events or colleges"></label><button class="icon-button" aria-label="Notifications">♧</button><a class="primary-button" href="my-events.html">▦ <span>My Events</span></a></div>
+    </header>
+
+    <div class="content college-content">
+      <section class="college-heading"><h2>Find Your College</h2><p>Search for your college and explore its upcoming, current, and past events.</p></section>
+      <label class="college-search"><span>⌕</span><input type="search" placeholder="Search colleges by name or abbreviation..." aria-label="Search colleges by name or abbreviation"></label>
+      <p class="college-search-status" id="collegeSearchStatus" aria-live="polite"></p>
+      <section class="college-grid" aria-label="Colleges">
+        <a class="college-card" href="college-events.html?college=nit"><div class="college-banner banner-blue"><span>NIT</span><b>▤</b></div><div class="college-details"><h3>National Institute of Technology</h3><p class="college-location">♧ &nbsp;Main Campus</p><p class="college-description">Premier engineering and technology institute</p><div class="college-counts"><span><i class="blue-dot"></i>1 future</span><span class="past"><i></i>0 past</span><b>›</b></div></div></a>
+        <a class="college-card" href="college-events.html?college=iit"><div class="college-banner banner-green"><span>IIT</span><b>▤</b></div><div class="college-details"><h3>Indian Institute of Technology</h3><p class="college-location">♧ &nbsp;Engineering Campus</p><p class="college-description">Excellence in technical education and research</p><div class="college-counts"><span><i class="blue-dot"></i>1 future</span><span class="today-count">1 today</span><span class="past"><i></i>0 past</span><b>›</b></div></div></a>
+        <a class="college-card" href="college-events.html?college=du"><div class="college-banner banner-orange"><span>DU</span><b>▤</b></div><div class="college-details"><h3>Delhi University</h3><p class="college-location">♧ &nbsp;Central Campus</p><p class="college-description">Diverse academic programs and rich cultural heritage</p><div class="college-counts"><span><i class="blue-dot"></i>5 future</span><span class="past"><i></i>0 past</span><b>›</b></div></div></a>
+        <a class="college-card" href="college-events.html?college=bits"><div class="college-banner banner-cyan"><span>BITS</span><b>▤</b></div><div class="college-details"><h3>BITS Pilani</h3><p class="college-location">♧ &nbsp;North Campus</p><p class="college-description">Science, engineering, and entrepreneurship hub</p><div class="college-counts"><span><i class="blue-dot"></i>1 future</span><span class="today-count">1 today</span><span class="past"><i></i>0 past</span><b>›</b></div></div></a>
+        <a class="college-card" href="college-events.html?college=christ"><div class="college-banner banner-pink"><span>CHRIST</span><b>▤</b></div><div class="college-details"><h3>Christ University</h3><p class="college-location">♧ &nbsp;South Campus</p><p class="college-description">Liberal arts, sciences, and cultural vibrancy</p><div class="college-counts"><span><i class="blue-dot"></i>1 future</span><span class="past"><i></i>0 past</span><b>›</b></div></div></a>
+        <a class="college-card" href="college-events.html?college=symbiosis"><div class="college-banner banner-purple"><span>SYMBIOSIS</span><b>▤</b></div><div class="college-details"><h3>Symbiosis International</h3><p class="college-location">♧ &nbsp;West Campus</p><p class="college-description">Multi-disciplinary and global exchange programs</p><div class="college-counts"><span><i class="blue-dot"></i>1 future</span><span class="today-count">1 today</span><span class="past"><i></i>0 past</span><b>›</b></div></div></a>
+      </section>
+    </div>
+
+    <footer class="footer college-footer"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a><p>Find your next campus moment. Discover, register, and never miss what's happening on campus — all in one place.</p><div class="socials"><a href="#">𝕏</a><a href="#">◎</a><a href="#">in</a><a href="#">⌘</a></div></div><div><h3>Explore</h3><a href="index.html">Discover</a><a href="calendar.html">Calendar</a><a href="filters.html">Filters</a><a href="my-events.html">My Events</a><a href="event-pulse.html?event=basketball">Event Pulse</a></div><div><h3>Get in Touch</h3><a href="mailto:hello@eventsphere.app">✉ &nbsp;hello@eventsphere.app</a><p>Student Center, Room 101</p><p>Mon–Fri, 9 AM – 5 PM</p></div><div class="copyright"><span>© 2026 EventSphere. Built for campus communities.</span><span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Support</a></span></div></footer>
+  </main>
+  <script src="global-search.js"></script>
+  <script src="colleges.js"></script>
+</body>
+</html>
