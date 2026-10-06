@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore upcoming, current, and past events at this college." />
+  <title>College Events | EventSphere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">Browse</p>
+      <a class="nav-link" href="index.html"><span>◉</span>Events</a>
+      <a class="nav-link active" href="colleges.html"><span>▤</span>Find Colleges<i></i></a>
+      <p class="nav-label">Plan</p>
+      <a class="nav-link" href="calendar.html"><span>▦</span>Calendar</a>
+      <p class="nav-label">Tools</p>
+      <a class="nav-link" href="filters.html"><span>☷</span>Event Filters</a>
+      <a class="nav-link" href="event-details.html?event=diwali"><span>▤</span>Event Details</a>
+      <p class="nav-label">Registration</p>
+      <a class="nav-link" href="registration.html?event=diwali"><span>♧</span>Registration</a>
+      <a class="nav-link" href="registration.html?event=diwali"><span>☑</span>Confirmation</a>
+      <p class="nav-label">Personal</p>
+      <a class="nav-link" href="my-events.html"><span>▣</span>My Events<b class="count">1</b></a>
+      <a class="nav-link" href="event-pulse.html?event=basketball"><span>⌁</span>Event Pulse</a>
+      <a class="nav-link" href="profile.html"><span>♙</span>Profile</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="online-dot"></span> Campus is buzzing</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Find your next campus moment</h1><p>Discover, register, and never miss what's happening on campus.</p></div>
+      <div class="top-actions"><label class="top-search"><span>⌕</span><input type="search" placeholder="Search events or colleges..." aria-label="Search events or colleges"></label><button class="icon-button" aria-label="Notifications">♧</button><a class="primary-button" href="my-events.html">▦ <span>My Events</span></a></div>
+    </header>
+
+    <div class="content detail-content">
+      <a class="back-colleges" href="colleges.html">← &nbsp;Back to all colleges</a>
+      <section class="college-hero-detail" id="collegeHero">
+        <span class="college-hero-icon">▤</span>
+        <div><h2 id="collegeName">College Name</h2><p><span id="collegeCampus">Campus</span><span>▤ &nbsp;<b id="totalEvents">0</b> total events</span></p><p id="collegeDescription">College description</p></div>
+      </section>
+
+      <section class="stats-grid" aria-label="Event totals">
+        <article class="stat-card"><strong id="futureTotal">0</strong><span>Future Events</span></article>
+        <article class="stat-card"><strong id="nowTotal">0</strong><span>Happening Now</span></article>
+        <article class="stat-card"><strong id="pastTotal">0</strong><span>Past Events</span></article>
+      </section>
+
+      <div class="event-tabs" role="tablist" aria-label="Event time period">
+        <button class="event-tab selected" type="button" data-tab="future" role="tab" aria-selected="true">Future Events <span id="futureTabCount">0</span></button>
+        <button class="event-tab" type="button" data-tab="now" role="tab" aria-selected="false">Happening Now <span id="nowTabCount">0</span></button>
+        <button class="event-tab" type="button" data-tab="past" role="tab" aria-selected="false">Past Events <span id="pastTabCount">0</span></button>
+      </div>
+
+      <section class="detail-event-grid" id="eventList" aria-live="polite"></section>
+    </div>
+    <footer class="footer"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-icon">◉</span><span><strong>EventSphere</strong><small>Campus Event Hub</small></span></a><p>Find your next campus moment. Discover, register, and never miss what's happening on campus — all in one place.</p><div class="socials"><a href="#">𝕏</a><a href="#">◎</a><a href="#">in</a><a href="#">⌘</a></div></div><div><h3>Explore</h3><a href="index.html">Discover</a><a href="calendar.html">Calendar</a><a href="filters.html">Filters</a><a href="my-events.html">My Events</a><a href="event-pulse.html?event=basketball">Event Pulse</a></div><div><h3>Get in Touch</h3><a href="mailto:hello@eventsphere.app">✉ &nbsp;hello@eventsphere.app</a><p>Student Center, Room 101</p><p>Mon–Fri, 9 AM – 5 PM</p></div></footer>
+  </main>
+  <script src="college-events.js"></script>
+  <script src="global-search.js"></script>
+</body>
+</html>
